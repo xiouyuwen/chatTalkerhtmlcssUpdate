@@ -49,38 +49,276 @@ table {
 
 
 
+
+
+
 .wrap{
+    width: 1088px;
     margin: 0 auto;
-    max-width: 1044px;
 }
 
 
 
-  
-.start{
-    background-image: url("https://raw.githubusercontent.com/xiouyuwen/chatTalkerhtmlcssUpdate/2d89b768d3c8dfa537ef2a88403772f9be729105/chatTalker_images/home_footer.svg");
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
-
 }
-.start h2{
+.logo img{
+    height: 40px;
+    margin-top: 24px;
+}
+.navbutton a{
+    background: #FF5D50;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    padding: 8px 32px;
+    border-radius: 50px;
+}
+.frontpage{
+    display: flex;
+}
+.beginning p{
+    color: #56C4C5;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 188px 0 8px 0;
+}
+h1{
+    color: #221E1F;
+    font-size: 48px;
+    line-height: 1.5;
+    font-weight: bold;
+    word-break: keep-all;
+    margin-bottom: 16px;
+}
+.beginning span{
+    color: #221E1F;
+    font-size: 20px;
+    opacity: 1;
+}
+.beginningimg img{
+    width: 532px;
+    margin: 30px 0 117px 0;
+}
+.index{
+    background-image: url("https://raw.githubusercontent.com/xiouyuwen/chatTalkerhtmlcssUpdate/447c249143329cf084f7142a22be679d626393d1/chatTalker_images/bg_home.svg"),url("https://raw.githubusercontent.com/xiouyuwen/chatTalkerhtmlcssUpdate/447c249143329cf084f7142a22be679d626393d1/chatTalker_images/ball01.svg");
+    background-repeat: no-repeat,no-repeat;
+    background-position: right top,top 520px left -200px;
+}
+.content h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 70px;
+}
+
+.platformbox{
+    display: flex;
+    width: 972px;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-top: 48px;
+    text-align: center;
+}
+.platform{
+    width: 244px;
+}
+.platform img{
+    width: 90px;
+    margin-bottom: 24px;
+}
+.platform p{
+    font-size: 24px;
+    color: #221E1F;
+    font-weight: bold;
+    margin-bottom: 24px;
+    white-space: nowrap;
+}
+.platform span{
+    font-size: 16px;
+    color: #747474;
+    line-height: 1.5;
+}
+h3{
+    font-size: 32px;
+    color: #221E1F;
+    text-align: center;
+    font-weight: bold;
+    margin: 100px 0 16px 0;
+}
+.service-page p{
+    font-size: 20px;
+    color: #221E1F;
+    text-align: center;
+}
+.servicebox{
+    display: flex;
+    justify-content: space-between;
+    margin: 48px 0 100px 0;
+    text-align: center;
+}
+.service{
+    width: 260px;
+    border-radius: 12px 12px 0px 0px;
+    box-shadow: 0px 2px 10px #00000014;
+}
+.service img{
+    border-radius: 12px 12px 0px 0px;
+}
+.service p{
+    color: #56C4C5;
+    font-size: 16px;
+    margin: 16px 0;
+}
+.p2{
+    font-size: 16px;
+    color: #221E1F;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+.customer{
+    display: flex;
+    align-items: center;
+}
+.pointbox{
+    width: 507px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.point{
+    width: 230px;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    margin-bottom: 28px;
+}
+.point img{
+    width: 52px;
+    margin-top: 49px;
+    margin-left: 32px;
+}
+.point p{
+    font-size: 18px;
+    color: #221E1F;
+    font-weight: bold;
+    margin: 41px 0 16px 32px;
+}
+.p3{
+    font-size: 16px;
+    color: #221E1F;
+    margin-bottom: 48px;
+    line-height: 1.5;
+    margin-left: 32px;
+}
+.pointword{
+    width: 395px;
+    margin: -65px 0 0 137px;
+}
+h4{
+    font-size: 32px;
+    color: #221E1F;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+.pointword p{
+    font-size: 18px;
+    color: #221E1F;
+    margin-bottom: 34px;
+}
+.pointword a{
+    font-size: 18;
+    color: white;
+    background: #56C4C5;
+    padding: 12px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+h5{
+    font-size: 32px;
+    color: #221E1F;
+    font-weight: bold;
+    margin-top: 100px;
+    text-align: center;
+}
+.feebackbox{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 104px;
+}
+.people{
+    width: 352px;
+    box-shadow: 0px 2px 10px #00000014;
+    position: relative;
+}
+.photo{
+    width: 80px;  
+    border-radius: 50px;
+    position: absolute;
+    left: 32px;
+    top: -55px;
+}
+.feeling{
+    font-size: 16px;
+    color: #221E1F;
+    margin: 48px 32px 0 32px;
+    line-height: 1.5;
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 24px;
+}
+.comname{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 24px 0 8px 32px;
+}
+.name{
+    display: flex;
+}
+.p4{
+    font-size: 16px;
+    color: #221E1F;
+    margin: 0 0 24px 32px;
+}
+.star{
+    margin-left: 84px;
+}
+.starimg{
+    width:17px;
+}
+
+
+.footer-start{
+    background-image: url("https://raw.githubusercontent.com/xiouyuwen/chatTalkerhtmlcssUpdate/447c249143329cf084f7142a22be679d626393d1/chatTalker_images/home_footer.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 100px;
+}
+h6{
     color: #221E1F;
     font-size: 32px;
     font-weight: bold;
     text-align: center;
-    
+    padding: 260px 0 48px 0;
 }
-.start-button{
-    background: #56C4C5;
-    
-    font-size: 18px;
+.startbutton{
     text-align: center;
+    margin-bottom: 100px;
+}
+.startbutton a{
+    background: #56C4C5;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 12px 32px;
+    border-radius: 50px;
     
 }
-.start-button a{
-    text-decoration: none;
-    color: white;
 
-}
+
+
 .footer{
     background: #F5F5F5;
 }
