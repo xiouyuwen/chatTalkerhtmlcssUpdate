@@ -228,6 +228,7 @@ h4{
     font-size: 18px;
     color: #221E1F;
     margin-bottom: 34px;
+    line-height: 1.5;
 }
 .pointword a{
     font-size: 18;
@@ -288,8 +289,6 @@ h5{
 .starimg{
     width:17px;
 }
-
-
 .footer-start{
     background-image: url("https://raw.githubusercontent.com/xiouyuwen/chatTalkerhtmlcssUpdate/447c249143329cf084f7142a22be679d626393d1/chatTalker_images/home_footer.svg");
     background-repeat: no-repeat;
@@ -316,9 +315,6 @@ h6{
     border-radius: 50px;
     
 }
-
-
-
 .footer{
     background: #F5F5F5;
 }
