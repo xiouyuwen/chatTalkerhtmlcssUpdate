@@ -47,14 +47,40 @@ table {
 	border-spacing: 0;
 }
 
+*,*::before,*::after{
+    box-sizing: border-box;
+}
 
 
 
 
 
 .wrap{
-    width: 1088px;
+    max-width: 1088px;
     margin: 0 auto;
+}
+@media (max-width:576px){
+    .wrap{
+        max-width: 366px;
+        margin: 0 auto;
+    }
+}
+
+.index{
+    background-image: url("https://raw.githubusercontent.com/xiouyuwen/chatTalkerhtmlcssUpdate/447c249143329cf084f7142a22be679d626393d1/chatTalker_images/bg_home.svg"),url("https://raw.githubusercontent.com/xiouyuwen/chatTalkerhtmlcssUpdate/447c249143329cf084f7142a22be679d626393d1/chatTalker_images/ball01.svg");
+    background-repeat: no-repeat,no-repeat;
+    background-position: right top,top 520px left -200px;
+}
+@media (max-width:576px){
+    .index{
+        background-image: none;
+    }
+    .index{
+        background-image: url("https://raw.githubusercontent.com/xiouyuwen/chatTalkerhtmlcssUpdate/b4a3ff7eb45a9ea50f9897a0eea1c2eeafe9cf64/chatTalker_images/bg_home_sm.svg");
+        background-repeat: no-repeat;
+        background-size: 400px;
+        background-position: 30px 400px;
+    }
 }
 
 
@@ -63,7 +89,6 @@ table {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 .logo img{
     height: 40px;
@@ -78,15 +103,27 @@ table {
     border-radius: 50px;
 }
 .frontpage{
-    display: flex;
+    display: flex;  
 }
-.beginning p{
+@media (max-width:576px){
+    .frontpage{
+        flex-direction: column;
+        margin-top: -100px;
+    }
+}
+
+.frontp{
     color: #56C4C5;
     font-size: 18px;
     font-weight: bold;
     margin: 188px 0 8px 0;
 }
-h1{
+@media (max-width:576px){
+    .frontp{
+        font-size: 16px;    
+    }
+}
+.fronttitle{
     color: #221E1F;
     font-size: 48px;
     line-height: 1.5;
@@ -94,20 +131,37 @@ h1{
     word-break: keep-all;
     margin-bottom: 16px;
 }
-.beginning span{
+@media (max-width:576px){
+    .fronttitle{
+        color: #221E1F;
+        font-size: 32px;
+        line-height: 1.5;
+        font-weight: bold;
+        word-break: keep-all;    
+    }
+}
+
+.frontspan{
     color: #221E1F;
     font-size: 20px;
     opacity: 1;
 }
+@media (max-width:576px){
+    .frontspan{
+        font-size: 16px;    
+    }
+}
 .beginningimg img{
     width: 532px;
     margin: 30px 0 117px 0;
+    
 }
-.index{
-    background-image: url("https://raw.githubusercontent.com/xiouyuwen/chatTalkerhtmlcssUpdate/447c249143329cf084f7142a22be679d626393d1/chatTalker_images/bg_home.svg"),url("https://raw.githubusercontent.com/xiouyuwen/chatTalkerhtmlcssUpdate/447c249143329cf084f7142a22be679d626393d1/chatTalker_images/ball01.svg");
-    background-repeat: no-repeat,no-repeat;
-    background-position: right top,top 520px left -200px;
+@media (max-width:576px){
+    .beginningimg img{
+        width: 330px;       
+    }
 }
+
 .content h2{
     text-align: center;
     font-size: 32px;
@@ -117,15 +171,27 @@ h1{
 
 .platformbox{
     display: flex;
-    width: 972px;
     margin: 0 auto;
     justify-content: space-around;
     margin-top: 48px;
     text-align: center;
 }
+@media (max-width:576px){
+    .platformbox{
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+    }
+}
+
 .platform{
     width: 244px;
 }
+@media (max-width:576px){
+    .platform{
+        margin-bottom: 24px;
+    }
+}
+
 .platform img{
     width: 90px;
     margin-bottom: 24px;
@@ -154,17 +220,39 @@ h3{
     color: #221E1F;
     text-align: center;
 }
+@media (max-width:576px){
+    .service-page p{
+        line-height: 1.5;
+    }
+}
+
 .servicebox{
     display: flex;
     justify-content: space-between;
-    margin: 48px 0 100px 0;
+    margin-top: 48px;
     text-align: center;
+    
 }
+@media (max-width:576px){
+    .servicebox{
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .service{
     width: 260px;
-    border-radius: 12px 12px 0px 0px;
+    border-radius: 12px;
     box-shadow: 0px 2px 10px #00000014;
 }
+@media (max-width:576px){
+    .service{
+        margin-bottom: 24px;
+    }
+}
+
 .service img{
     border-radius: 12px 12px 0px 0px;
 }
@@ -182,19 +270,41 @@ h3{
 .customer{
     display: flex;
     align-items: center;
+    text-align: left;
 }
+@media (max-width:576px){
+    .customer{
+        flex-direction: column-reverse;
+    }
+}
+
 .pointbox{
     width: 507px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 100px;
 }
+@media (max-width:576px){
+    .pointbox{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .point{
     width: 230px;
     box-shadow: 0px 2px 10px #00000014;
     border-radius: 12px;
     margin-bottom: 28px;
 }
+@media (max-width:576px){
+    .point{
+        flex-wrap: wrap;
+    }
+}
+
 .point img{
     width: 52px;
     margin-top: 49px;
@@ -215,23 +325,41 @@ h3{
 }
 .pointword{
     width: 395px;
-    margin: -65px 0 0 137px;
+    margin-left: 137px;
 }
-h4{
+@media (max-width:576px){
+    .pointword{
+        text-align: center;
+        margin-left: 20px;
+    }
+}
+
+.h4{
     font-size: 32px;
     color: #221E1F;
     font-weight: bold;
     line-height: 1.5;
     margin-bottom: 16px;
 }
-.pointword p{
+@media (max-width:576px){
+    .pointword{
+        font-size: 28px;
+    }
+}
+
+.pointword4{
     font-size: 18px;
     color: #221E1F;
     margin-bottom: 34px;
     line-height: 1.5;
 }
+@media (max-width:576px){
+    .pointword4{
+        font-size: 16px;
+    }
+}
 .pointword a{
-    font-size: 18;
+    font-size: 18px;
     color: white;
     background: #56C4C5;
     padding: 12px 32px;
@@ -245,16 +373,33 @@ h5{
     margin-top: 100px;
     text-align: center;
 }
+
 .feebackbox{
     display: flex;
     justify-content: space-between;
     margin-top: 104px;
 }
+@media (max-width:576px){
+    .feebackbox{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+
 .people{
     width: 352px;
     box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
     position: relative;
 }
+@media (max-width:576px){
+    .people{
+        margin-bottom:80px;
+    }
+}
+
 .photo{
     width: 80px;  
     border-radius: 50px;
