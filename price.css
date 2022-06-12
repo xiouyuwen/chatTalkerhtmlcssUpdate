@@ -60,6 +60,11 @@ table {
     max-width: 909px;
     margin: 0 auto;
 }
+.price{
+    background-image: url("https://raw.githubusercontent.com/xiouyuwen/chatTalkerhtmlcssUpdate/9e1b925cdf2ba1704a66b03c10e026f211c4bf8f/chatTalker_images/banner.svg");
+    background-repeat: no-repeat;
+    background-position: top right ;
+}
 
 
 .nav{
@@ -80,11 +85,7 @@ table {
     padding: 8px 32px;
     border-radius: 50px;
 }
-.price{
-    background-image: url("https://raw.githubusercontent.com/xiouyuwen/chatTalkerhtmlcssUpdate/9e1b925cdf2ba1704a66b03c10e026f211c4bf8f/chatTalker_images/banner.svg");
-    background-repeat: no-repeat;
-    background-position: top right ;
-}
+
 
 h1{
     font-size: 48px;
@@ -118,6 +119,10 @@ h2{
     font-size: 18px;
     padding: 12px 32px;
     text-decoration: none;
+}
+.program-button a:hover{
+    background: #56C4C5;
+    color: white;
 }
 .program-content{
     display: flex;
@@ -206,6 +211,11 @@ h2{
     padding: 12px 32px;
     text-decoration: none;
     border-radius: 27px;
+}
+.probtn a:hover{
+    background: white;
+    color: #56C4C5;
+    border: 1px solid #56C4C5;
 }
 h4{
     font-size: 32px;
