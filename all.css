@@ -380,7 +380,6 @@ h5{
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
-        
     }
 }
 
@@ -454,7 +453,6 @@ h6{
     text-decoration: none;
     padding: 12px 32px;
     border-radius: 50px;
-    
 }
 .footer{
     background: #F5F5F5;
