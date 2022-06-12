@@ -53,10 +53,13 @@ table {
 
 
 .wrap{
-    width: 1088px;
+    max-width: 1088px;
     margin: 0 auto;
 }
-
+.wrap2{
+    max-width: 909px;
+    margin: 0 auto;
+}
 
 
 .nav{
@@ -77,20 +80,185 @@ table {
     padding: 8px 32px;
     border-radius: 50px;
 }
+.price{
+    background-image: url("https://raw.githubusercontent.com/xiouyuwen/chatTalkerhtmlcssUpdate/9e1b925cdf2ba1704a66b03c10e026f211c4bf8f/chatTalker_images/banner.svg");
+    background-repeat: no-repeat;
+    background-position: top right ;
+}
 
+h1{
+    font-size: 48px;
+    color: #221E1F;
+    font-weight: bold;
+    margin: 116px 0 16px 0;
+}
+.banner-txt p{
+    font-size: 16px;
+    color: #221E1F;
+}
+.program{
+    margin: 0 auto;
+}
+h2{
+    font-size: 32px;
+    color: #221E1F;
+    font-weight: bold;
+    text-align: center;
+    margin: 280px 0 48px 0;
+}
+.program-button{
+    text-align: center;
+    justify-content: space-between;
+}
+.program-button a{
+    background: white;
+    color: #56C4C5;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+    font-size: 18px;
+    padding: 12px 32px;
+    text-decoration: none;
+}
+.program-content{
+    display: flex;
+    margin-top: 54px;
+    justify-content: space-between;
+}
+.probox{
+    width: 444px;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    text-align: center;
+    
+}
+.probox-title{
+    font-size: 24px;
+    color: #221E1F;
+    font-weight: bold;
+    text-align: center;
+    
+    border-bottom: 1px solid #DDDDDD;
+    padding:20px 0;
+}
+.probox-txt{
+    font-size: 16px;
+    color: #221E1F;
+    margin:32px 0;
+    line-height: 1.5;
+}
+.prodata{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.datanb{
+    background: #F5F5F5;
+    width: 169px;
+    border-radius: 12px;
+}
+.user{
+    font-size: 16px;
+    color: #221E1F;
+    margin: 24px 0 8px 0;
+}
+.many{
+    display: flex;
+}
+.guys{
+    color: #56C4C5;
+    font-size: 32px;
+    margin:0 8px 24px 32px;
+}
+.unit{
+    color: #56C4C5;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.equal{
+    font-size: 29px;
+    color: #221E1F;
+}
+.guys2{
+    color: #221E1F;
+    font-size: 32px;
+    margin:0 8px 24px 32px;
+}
+.unit2{
+    color: #221E1F;
+    font-size: 12px;
+    margin-top: 20px;
+}
+.protxt img{
+    padding-right: 13px;
+}
+.protxt li{
+    text-align: left;
+    padding-left: 29px;
+    line-height: 2;
+}
+.probtn{
+    margin: 32px 0 32px 0;
+}
+.probtn a{
+    background: #56C4C5;
+    font-size: 18px;
+    color: white;
+    padding: 12px 32px;
+    text-decoration: none;
+    border-radius: 27px;
+}
+h4{
+    font-size: 32px;
+    color: #221E1F;
+    text-align: center;
+    margin: 100px 0 48px 0;
+    font-weight: bold;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    padding: 16px 32px;
+    margin-bottom: 16px;
+}
+.QA{
+    font-size: 18px;
+    color: #221E1F;
+}
 
-
-
-
-
-
-
-
-
-
-
+.Q{
+    color: #56C4C5;
+    font-weight: bold;
+    font-size: 18px;
+    margin:16px 0 24px 0;
+}
+.A{
+    font-size: 16px;
+    color: #747474;
+}
+.box2{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    padding: 16px 32px;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+}
+.answer{
+    font-size: 16px;
+    color:#747474;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
 .footer{
     background: #F5F5F5;
+    margin-top: 100px;
 }
 .footer p{
     text-align: center;
